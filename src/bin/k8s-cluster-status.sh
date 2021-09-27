@@ -31,8 +31,6 @@ function checkArgs()
 
 function main()
 {
-  echo "" # new line
-
   checkArgs "${@}"
 
   local -r context="${1}"; shift
