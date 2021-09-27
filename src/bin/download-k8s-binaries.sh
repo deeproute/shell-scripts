@@ -23,11 +23,11 @@ source "../lib/k8s/bin-locations-functions.sh"
 
 function checkArgs()
 {
-  if (( $# < 2 )); then
-    echo "This script saves in a folder all current information like pods, events.."
+  if (( $# < 4 )); then
+    echo "Downloads k8s binaries & uploads them to the specified 'uploadserver'"
     echo
-    echo "Usage: ${0} cluster-context folder-path"
-    echo "Example: ${0} k8slab /path/to/folder"
+    echo "Usage: ${0} \"<k8s-version>\" \"<crictl-version>\" \"<cni-version>\" \"<upload-server>\""
+    echo "Example: ${0} \"1.19.15\" \"1.19.0\" \"0.8.2\" \"uploadserver\""
     exit 1
   fi
 }
