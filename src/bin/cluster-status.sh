@@ -15,8 +15,8 @@ set -o errexit
 # don't hide errors within pipes
 set -o pipefail
 
-# shellcheck source=../k8s/k8s-functions.sh
-source "../k8s/k8s-functions.sh"
+# shellcheck source=../lib/k8s/kubectl-functions.sh
+source "../lib/k8s/kubectl-functions.sh"
 
 function checkArgs()
 {

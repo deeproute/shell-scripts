@@ -15,11 +15,11 @@ set -o errexit
 # don't hide errors within pipes
 set -o pipefail
 
-# shellcheck source=../file/file-functions.sh
-source "../file/file-functions.sh"
+# shellcheck source=../lib/file/file-functions.sh
+source "../lib/file/file-functions.sh"
 
-# shellcheck source=../k8s/bin-locations-functions.sh
-source "../k8s/bin-locations-functions.sh"
+# shellcheck source=../lib/k8s/bin-locations-functions.sh
+source "../lib/k8s/bin-locations-functions.sh"
 
 function checkArgs()
 {
